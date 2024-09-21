@@ -1,21 +1,21 @@
-var msecCounter = 0;
+var milsecCounter = 0;
 var secCounter = 0;
 var minCounter = 0;
 
 var min = document.getElementById("min");
 var sec = document.getElementById("sec");
-var msec = document.getElementById("msec");
+var milsec = document.getElementById("milsec");
 var counter = 0;
 var interval;
 
 function timer() {
-    msecCounter++;
-    msec.innerHTML = msecCounter;
+    milsecCounter++;
+    milsec.innerHTML = milsecCounter;
     console.log(msecCounter);
-    if (msecCounter === 100) {
+    if (milsecCounter === 100) {
         secCounter++;
         sec.innerHTML = secCounter;
-        msecCounter = 0;
+        milsecCounter = 0;
         if (secCounter === 5) {
             secCounter = 0;
             minCounter++;
@@ -26,7 +26,7 @@ function timer() {
 
 function startTimer(e) {
     // e.disabled = true
-    interval = setInterval(timer, 10);
+    interval = setInterval(timer, 1000);
 }
 
 function stopTimer() {
@@ -38,8 +38,8 @@ function resetTimer() {
 
     min.innerHTML = "00";
     sec.innerHTML = "00";
-    msec.innerHTML = "00";
+    milsec.innerHTML = "00";
     secCounter = 0;
     minCounter = 0;
-    msecCounter = 0;
+    milsecCounter = 0;
 }
