@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STOP WATCH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+ <div class="logo"><img src="logo.jpg"></div> 
+
+  <h1 class="head">STOP WATCH</h1>
+
+  <div class="parent">
+    <div id="min">00</div><span>:</span>
+    <div id="sec">00</div><span>:</span>
+    <div id="msec">00</div>
+  </div>
+
+  <div class="btnparent">
+    <button onclick="startTimer(this)">START</button>
+    <button onclick="stopTimer()">STOP</button>
+    <button onclick="resetTimer()">RESET</button>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
