@@ -63,3 +63,9 @@ img {
   background-color: rgb(57, 59, 59);
   color: aqua;
 }
+
+@media screen and (max-width:500px) {
+.head{
+  margin-top: 0px;
+}
+}
